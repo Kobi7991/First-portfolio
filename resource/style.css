@@ -1,0 +1,253 @@
+c
+* {
+
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 20px;
+}
+
+main {
+    --green:#f2ffa7;
+    --orange:#dc5042;
+    --color:white;
+    --sections-border: 20px;
+    --margin-bottom: 10px;
+    --h2:'Array-Bold';
+    --h5:'Courier New', Courier, monospace;
+}
+
+/* ---------Colors--------- */
+
+/* ---------Fonts--------- */
+@font-face {
+    font-family: 'Array-Bold'; src: url('./fonts/Array_Complete/Fonts/Array-Bold.otf'); 
+}
+
+
+/* ---------Header--------- */
+
+.header-section h3 {
+    font-family: 'Array-Bold', sans-serif;
+    color: #DC5042;
+}
+
+.header-section #my-nav #nav-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-section #my-nav #nav-menu{
+    list-style: none;
+}
+
+.header-section #my-nav #nav-menu li{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-underline-offset: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #DC5042;
+}
+
+.header-section #my-nav #nav-menu li a{
+    font-family: 'Courier New', Courier, monospace;
+    color: #DC5042;
+}
+
+
+
+/* ---------Hello Section--------- */
+
+.hello-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--green);
+    height: 70vh;
+    border-radius: 20px;
+    padding-bottom: 70px;
+    margin-bottom: var(--margin-bottom);
+}
+
+.header-section {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    margin: 0px 10px 10px 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.hello-section #header-title{
+    text-align: center;
+    color: #dc5042;
+    font-size: 3em;
+    font-family: 'Array-Bold', sans-serif;
+    margin-bottom: 0;
+    padding-top: 40px;
+    line-height: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    transition: transform 0.7s ease-in-out;
+}
+
+.hello-section #header-title:hover {
+    transform: translateY(-10px);
+    transform: scale(1.1);
+}
+
+.hello-section #header-par{
+    text-align: center;
+    color: #DC5042;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+
+/* ---------Project Section--------- */
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: rgb(244, 244, 244);
+    border-radius: var(--sections-border);
+    margin-bottom: var(--margin-bottom);
+}
+
+.project-section #project-section-anchor {
+    font-family: var(--h2);
+
+}
+
+
+.grid-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid-item {
+    display: flex;
+    border: solid black 1px;
+    width: 300px;
+    height: 110px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    color: aliceblue;
+    font-size: 70px;
+    border-radius: 10px;
+}
+
+.grid-item:hover {
+color: #DC5042;
+}
+
+.project-section img {
+    display: block;
+    flex-direction: row;
+    width: 300px;
+}
+
+/* ---------Skills Section--------- */
+
+.skills-section {
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: var(--sections-border);
+    background-color: var(--orange);
+    margin-bottom: var(--margin-bottom);
+}
+.skills-section #skills-section-anchor {
+    font-family: var(--h2);
+    color: var(--green);
+}
+
+.skills-section h3, li {
+    font-family: var(--h5);
+    color: var(--green);
+}
+
+.skills-section li {
+    list-style: none;
+    display: inline;
+}
+
+.skills-section #skill-list {
+   display: flex;
+   gap: 20px;
+   padding: 0;
+   margin: 0;
+}
+
+
+/*--------- Contact Section ---------*/
+
+.contact-section {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: var(--sections-border);
+    background-color: black;
+    color: var(--color);
+}
+
+.contact-section #contact-section-anchor {
+    font-family: var(--h2);
+}
+
+.contact-section h3 a {
+    color: var(--color);
+    font-family: var(--h5);
+}
+
+
+ul#social-list {
+    display: flex;
+    gap: 20px;
+} 
+
+.contact-section li{
+    list-style: none;
+    display: flex;
+}
+
+
+
+/* צריך לסדר פה הכל למט */
+
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer li{
+    list-style: none;
+    padding: 0;
+    display: inline;
+    gap: 20px;
+}
+
+footer ul {
+    padding: 0;
+}
