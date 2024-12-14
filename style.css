@@ -427,21 +427,107 @@ footer ul {
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
     body {
+        font-size: 14;
     }
     
-    .hello-section #header-title {
-        text-align: center;
-        color: #dc5042;
-        font-size: 2rem;
-        font-family: 'Array-Bold', sans-serif;
-        margin-bottom: 0;
-        padding-top: 40px;
-        line-height: 1em;
-        margin-left: 1em;
-        margin-right: 1em;
-        transition: transform 0.7s ease-in-out;
-    }
+/* ---------Header--------- */
+
+.header-section {
+    display: flex;
+    position: sticky;
+    top: 10px;
+    width: 100vh;
+    background-color: var(--transparent);
+    mix-blend-mode: lighten;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-section #logo-name {
+    font-family: 'Array-Bold', sans-serif;
+    width: 50%;
+    font-size: 1.5rem;
+    color: #DC5042;
+}
+
+.header-section #my-nav #nav-menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    visibility: hidden;
+}
+
+.header-section #my-nav #nav-menu{
+    list-style: none;
+}
+
+.header-section #my-nav #nav-menu li{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-underline-offset: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #DC5042;
+}
+
+.header-section #my-nav #nav-menu li a{
+    font-family: 'Courier New', Courier, monospace;
+    color: #DC5042;
+}
+
+
+/* ---------Hello Section--------- */
+
+.hello-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--green);
+    height: 70vh;
+    border-radius: 20px;
+    padding-bottom: 70px;
+    margin-bottom: var(--margin-bottom);
+}
+
+.header-section {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    margin: 0px 10px 10px 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.hello-section #header-title{
+    text-align: center;
+    color: #dc5042;
+    font-size: 2rem;
+    font-family: 'Array-Bold', sans-serif;
+    margin-bottom: 0;
+    padding-top: 4em;
+    line-height: 2rem;
+    margin-left: 1em;
+    margin-right: 1em;
+    transition: transform 0.7s ease-in-out;
+}
+
+.hello-section #header-title:hover {
+    transform: translateY(-10px);
+    transform: scale(1.1);
+}
+
+.hello-section #header-par{
+    text-align: center;
+    color: #DC5042;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+
 }
 
