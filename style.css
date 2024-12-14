@@ -27,7 +27,7 @@ main {
 
 /* ---------Fonts--------- */
 @font-face {
-    font-family: 'Array-Bold'; src: url('./fonts/Array_Complete/Fonts/Array-Bold.otf');
+    font-family: 'Array-Bold'; src: url('./resource/fonts/Array_Complete/Fonts/Array-Bold.otf');
 }
 h1 {font-family: 'Courier New', Courier, monospace; font-size: 30rem;} 
 h2 {font-family: 'Courier New', Courier, monospace; font-size: 2rem;} 
