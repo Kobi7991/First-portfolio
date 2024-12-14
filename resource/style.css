@@ -16,6 +16,7 @@ main {
     --green:#f2ffa7;
     --orange:#dc5042;
     --color:white;
+    --transparent:transparent;
     --sections-border: 20px;
     --margin-bottom: 10px;
     --h2:'Array-Bold';
@@ -26,20 +27,39 @@ main {
 
 /* ---------Fonts--------- */
 @font-face {
-    font-family: 'Array-Bold'; src: url('./fonts/Array_Complete/Fonts/Array-Bold.otf'); 
+    font-family: 'Array-Bold'; src: url('./fonts/Array_Complete/Fonts/Array-Bold.otf');
 }
+h1 {font-family: 'Courier New', Courier, monospace; font-size: larger;} 
+h2 {font-family: 'Courier New', Courier, monospace; font-size: 30px;} 
+h3 {font-family: 'Courier New', Courier, monospace; font-size: medium;} 
+h4 {font-family: 'Courier New', Courier, monospace; font-size: small;} 
+h5 {font-family: 'Courier New', Courier, monospace; font-size: smaller;}
+
 
 
 /* ---------Header--------- */
 
-.header-section h3 {
+.header-section {
+    display: flex;
+    position: sticky;
+    top: 20px;
+    background-color: var(--transparent);
+    mix-blend-mode: lighten;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-section #logo-name {
     font-family: 'Array-Bold', sans-serif;
+    font-size: 1.5rem;
     color: #DC5042;
 }
 
 .header-section #my-nav #nav-menu {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .header-section #my-nav #nav-menu{
@@ -224,6 +244,9 @@ color: #DC5042;
 ul#social-list {
     display: flex;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 } 
 
 .contact-section li{
@@ -239,6 +262,7 @@ ul#social-list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color:rgb(255, 255, 255);
 }
 
 footer li{
@@ -251,3 +275,128 @@ footer li{
 footer ul {
     padding: 0;
 }
+
+
+/*--------- Contact Form ---------*/
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-section #contant-title {
+    margin-top: 50px;
+    font-family: 'Array-Bold', sans-serif;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+.name-form {
+    width: 200px;
+    height: 30px;
+    border-radius: 7px;
+    padding: 0 10px 0 10px;
+    margin-top: 10px;
+    background-color: var(--transparent);
+    border: solid 0.2px var(--color);
+    margin: 0;
+}
+
+.name-form:focus {
+    all: unset;
+    width: 200px;
+    height: 30px;
+    border-radius: 7px;
+    padding: 0 10px 0 10px;
+    margin-top: 10px;
+    background-color: var(--transparent);
+    border: solid 0.2px var(--color);
+    margin: 0;
+}
+
+
+.email-form {
+    all: unset;
+    width: 200px;
+    height: 30px;
+    border-radius: 7px;
+    padding: 0 10px 0 10px;
+    margin-top: 10px;
+    background-color: var(--transparent);
+    border: solid var(--green) 2px;
+    margin: 0;
+}
+
+.email-form {
+    all: unset;
+    width: 200px;
+    height: 30px;
+    border-radius: 7px;
+    padding: 0 10px 0 10px;
+    margin-top: 10px;
+    background-color: var(--transparent);
+    border: solid 0.2px var(--color);
+    margin: 0;
+}
+
+
+.message-form {
+    all: unset;
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    padding: 0 10px 0 10px;
+    margin-top: 10px;
+    background-color: var(--transparent);
+    border: solid 0.2px var(--color);
+    margin: 0;
+}
+
+.message-form {
+    all: unset;
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    padding: 0 10px 0 10px;
+    margin-top: 10px;
+    background-color: var(--transparent);
+    border: solid 0.2px var(--color);
+    margin: 0;
+}
+
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 0 10px 0 10px;
+    background-color: var(--green);
+    border: none;
+    color: var(--orange);
+}
+
+.submit-button:hover {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 0 10px 0 10px;
+    background-color: var(--orange);
+    border: none;
+    color: var(--color);
+}
+
+
