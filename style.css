@@ -41,12 +41,19 @@ h5 {font-family: 'Courier New', Courier, monospace; font-size: 0.5rem;}
 
 .header-section {
     display: flex;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 10px;
     position: sticky;
     top: 20px;
     background-color: var(--transparent);
     mix-blend-mode: lighten;
     justify-content: center;
     align-items: center;
+}
+
+#my-nav {
+    max-width: 100%;
 }
 
 
@@ -58,6 +65,7 @@ h5 {font-family: 'Courier New', Courier, monospace; font-size: 0.5rem;}
 
 .header-section #my-nav #nav-menu {
     display: flex;
+    max-width: 100%;
     justify-content: space-around;
     align-items: center;
 }
@@ -90,14 +98,15 @@ h5 {font-family: 'Courier New', Courier, monospace; font-size: 0.5rem;}
     justify-content: center;
     background-color:var(--green);
     height: 70vh;
+    max-width: 100%;
     border-radius: 20px;
     padding-bottom: 70px;
-    margin-bottom: var(--margin-bottom);
 }
 
 .header-section {
     display: flex;
-    align-self: center;
+    max-width: 100%;
+    align-items: center;
     justify-content: space-around;
     margin: 0px 10px 10px 5px;
     background-color: rgb(255, 255, 255);
@@ -112,8 +121,6 @@ h5 {font-family: 'Courier New', Courier, monospace; font-size: 0.5rem;}
     margin-bottom: 0;
     padding-top: 40px;
     line-height: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
     transition: transform 0.7s ease-in-out;
 }
 
@@ -126,8 +133,6 @@ h5 {font-family: 'Courier New', Courier, monospace; font-size: 0.5rem;}
     text-align: center;
     color: #DC5042;
     font-family: 'Courier New', Courier, monospace;
-    margin-left: 5em;
-    margin-right: 5em;
 }
 
 
@@ -139,6 +144,7 @@ h5 {font-family: 'Courier New', Courier, monospace; font-size: 0.5rem;}
     justify-content: center;
     align-items: center;
     height: 70vh;
+    width: 100%;
     background-color: rgb(244, 244, 244);
     border-radius: var(--sections-border);
     margin-bottom: var(--margin-bottom);
@@ -187,6 +193,7 @@ color: #DC5042;
 
 .skills-section {
     height: 70vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,6 +229,7 @@ color: #DC5042;
 .grid-section {
     display: grid;
     height: 70vh;
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0.7em;
@@ -427,38 +435,47 @@ footer ul {
 
 
 
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 14;
-    }
-    
+@media only screen and (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+        margin: 0 10px 0 10px;
+        padding: 0;
+     } 
+     
 /* ---------Header--------- */
+
+header {
+    max-width: 100%;
+}
 
 .header-section {
     display: flex;
+    max-width: 100%;
     position: sticky;
-    top: 10px;
-    width: 100vh;
+    top: 20px;
     background-color: var(--transparent);
     mix-blend-mode: lighten;
     justify-content: center;
     align-items: center;
 }
 
+#my-nav {
+    display: flex;
+    max-width: 100%;
+    visibility: hidden;
+}
 
 .header-section #logo-name {
     font-family: 'Array-Bold', sans-serif;
-    width: 50%;
     font-size: 1.5rem;
     color: #DC5042;
 }
 
 .header-section #my-nav #nav-menu {
     display: flex;
-    width: 50%;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
-    visibility: hidden;
 }
 
 .header-section #my-nav #nav-menu{
@@ -488,6 +505,7 @@ footer ul {
     justify-content: center;
     background-color:var(--green);
     height: 70vh;
+    width: 100%;
     border-radius: 20px;
     padding-bottom: 70px;
     margin-bottom: var(--margin-bottom);
@@ -495,7 +513,7 @@ footer ul {
 
 .header-section {
     display: flex;
-    align-self: center;
+    align-items: center;
     justify-content: space-around;
     margin: 0px 10px 10px 5px;
     background-color: rgb(255, 255, 255);
