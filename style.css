@@ -56,6 +56,10 @@ h5 {font-family: 'Courier New', Courier, monospace; font-size: 0.5rem;}
     max-width: 100%;
 }
 
+#hamburger-nav-menu {
+    visibility: hidden;
+}
+
 
 .header-section #logo-name {
     font-family: 'Array-Bold', sans-serif;
@@ -435,9 +439,10 @@ footer ul {
 
 
 
-@media only screen and (max-width: 700px) {
+@media (max-width: 768px) {
     html, body {
         overflow-x: hidden;
+        font-size: 14px;
         margin: 0 10px 0 10px;
         padding: 0;
      } 
@@ -451,7 +456,6 @@ header {
 .header-section {
     display: flex;
     max-width: 100%;
-    position: sticky;
     top: 20px;
     background-color: var(--transparent);
     mix-blend-mode: lighten;
@@ -461,26 +465,37 @@ header {
 
 #my-nav {
     display: flex;
-    max-width: 100%;
+    max-width: 50%;
     visibility: hidden;
+}
+
+#nav-menu {
+    display: flex;
+    max-width: 50%;
+    visibility: hidden;
+}
+
+#hamburger-nav-menu {
+    visibility: visible;
+    z-index: 5;
+    color: #DC5042;
 }
 
 .header-section #logo-name {
     font-family: 'Array-Bold', sans-serif;
     font-size: 1.5rem;
     color: #DC5042;
+    max-width: 50%;
 }
 
 .header-section #my-nav #nav-menu {
     display: flex;
-    width: 100%;
     justify-content: space-around;
     align-items: center;
-}
-
-.header-section #my-nav #nav-menu{
+    max-width: 100%;
     list-style: none;
 }
+
 
 .header-section #my-nav #nav-menu li{
     padding-left: 10px;
@@ -488,6 +503,7 @@ header {
     text-underline-offset: 10px;
     font-family: 'Courier New', Courier, monospace;
     color: #DC5042;
+    
 }
 
 .header-section #my-nav #nav-menu li a{
@@ -508,7 +524,7 @@ header {
     width: 100%;
     border-radius: 20px;
     padding-bottom: 70px;
-    margin-bottom: var(--margin-bottom);
+    margin-top: 20px;
 }
 
 .header-section {
