@@ -466,7 +466,7 @@ header {
 #my-nav {
     display: flex;
     max-width: 50%;
-    visibility: hidden;
+    visibility: visible;
 }
 
 #nav-menu {
@@ -477,6 +477,7 @@ header {
 
 #hamburger-nav-menu {
     visibility: visible;
+    font-size: 25px;
     z-index: 5;
     color: #DC5042;
 }
